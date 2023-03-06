@@ -5,4 +5,4 @@ docker --version
 #read -p "Enter the version of docker image:" option
 docker build -t reactapp:v1 .
 docker images
-
+docker image ls
