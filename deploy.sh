@@ -11,4 +11,5 @@ tar -xvzf react_app.tar.gz
 cd react_app
 chmod +x docker.sh
 ./docker.sh
+docker login --username=$docker_username --password=$docker_password
 
