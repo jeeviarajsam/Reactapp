@@ -8,7 +8,7 @@ ssh -T -o StrictHostKeyChecking=no -i $key ubuntu@18.183.89.72<<EOF
 cd /home/ubuntu
 rm -rf react_app || true
 tar -xvzf react_app.tar.gz 
-cd reactapp
+cd react_app
 chmod +x docker.sh
 ./docker.sh
 
