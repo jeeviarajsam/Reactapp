@@ -14,4 +14,5 @@ chmod +x docker.sh
 #docker login --username=$docker_username --password=$docker_password
 echo $docker_password | docker login -u $docker_username --password-stdin
 docker image push jeeviarajsam/reactapp_dev:v1
+docker run -d -it --name jeevi -p 81:80 jeeviarajsam/reactapp_dev:v1
 
