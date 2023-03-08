@@ -7,6 +7,7 @@ scp -o StrictHostKeyChecking=no -i $key react_app.tar.gz ubuntu@3.112.2.162:/hom
 ssh -T -o StrictHostKeyChecking=no -i $key ubuntu@3.112.2.162<<EOF
 cd /home/ubuntu
 rm -rf react_app || true
+sudo docker system prune -y
 tar -xvzf react_app.tar.gz 
 cd react_app
 chmod +x docker.sh
